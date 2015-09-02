@@ -411,6 +411,7 @@
 				667DCF7E1B84D94800C0C085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		667DCF7F1B84D94800C0C085 /* Build configuration list for PBXNativeTarget "1aDayCalTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +420,7 @@
 				667DCF811B84D94800C0C085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
