@@ -11,13 +11,16 @@ import UIKit
 class NewViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var textView: UITextView!
     
     var image = UIImage()
+    var geekText = "test"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.imageView.image = self.image
+        self.textView.text = self.geekText
         
     }
 
