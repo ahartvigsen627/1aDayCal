@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6623FA1E1CAB32E900809017 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6623FA1D1CAB32E900809017 /* CollectionViewCell.swift */; };
+		6623FA201CAB332A00809017 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6623FA1F1CAB332A00809017 /* NewViewController.swift */; };
+		6623FA221CAC5FA200809017 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6623FA211CAC5FA200809017 /* CollectionViewController.swift */; };
 		667DCF631B84D94800C0C085 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667DCF621B84D94800C0C085 /* AppDelegate.swift */; };
 		667DCF651B84D94800C0C085 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667DCF641B84D94800C0C085 /* ViewController.swift */; };
 		667DCF681B84D94800C0C085 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667DCF661B84D94800C0C085 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6623FA1D1CAB32E900809017 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		6623FA1F1CAB332A00809017 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		6623FA211CAC5FA200809017 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		667DCF5D1B84D94800C0C085 /* 1aDayCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1aDayCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		667DCF611B84D94800C0C085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		667DCF621B84D94800C0C085 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +85,9 @@
 			children = (
 				667DCF621B84D94800C0C085 /* AppDelegate.swift */,
 				667DCF641B84D94800C0C085 /* ViewController.swift */,
+				6623FA211CAC5FA200809017 /* CollectionViewController.swift */,
+				6623FA1D1CAB32E900809017 /* CollectionViewCell.swift */,
+				6623FA1F1CAB332A00809017 /* NewViewController.swift */,
 				667DCF661B84D94800C0C085 /* Main.storyboard */,
 				667DCF691B84D94800C0C085 /* Images.xcassets */,
 				667DCF6B1B84D94800C0C085 /* LaunchScreen.xib */,
@@ -156,7 +165,8 @@
 		667DCF551B84D94800C0C085 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Geek Mind Fusion";
 				TargetAttributes = {
 					667DCF5C1B84D94800C0C085 = {
@@ -214,6 +224,9 @@
 			files = (
 				667DCF651B84D94800C0C085 /* ViewController.swift in Sources */,
 				667DCF631B84D94800C0C085 /* AppDelegate.swift in Sources */,
+				6623FA1E1CAB32E900809017 /* CollectionViewCell.swift in Sources */,
+				6623FA201CAB332A00809017 /* NewViewController.swift in Sources */,
+				6623FA221CAC5FA200809017 /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +289,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -344,6 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 1aDayCal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GeekMindFusion.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -354,6 +369,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 1aDayCal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GeekMindFusion.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -372,6 +388,7 @@
 				);
 				INFOPLIST_FILE = 1aDayCalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GeekMindFusion.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/1aDayCal.app/1aDayCal";
 			};
@@ -387,6 +404,7 @@
 				);
 				INFOPLIST_FILE = 1aDayCalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GeekMindFusion.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/1aDayCal.app/1aDayCal";
 			};
