@@ -16,6 +16,9 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
     let imageArray = [UIImage(named: "Apple Devices"), UIImage(named: "Matrix SS"), UIImage(named: "Multi Screen"), UIImage(named: "Office Decorations"), UIImage(named: "Phone Bean Bag"), UIImage(named: "Vulcan Hand Gesture")]
     let geekSayings = ["you own a Mac, iPad and iPhone.", "you have a Matrix Screen Saver.", "you use more than 1 computer Screen.", "you decorate your Office with obscure video game print outs.", "you have a bean bag for your phone.", "the Vulcan hand gesture is a normal farwell."]
     
+    let currentDate = NSDate()
+    let dateFormatter = NSDateFormatter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,10 +37,13 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CollectionViewCell
+        let calculatedDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Day, value: indexPath.row, toDate: self.currentDate, options: NSCalendarOptions.init(rawValue: 0))
         
         cell.imageView?.image = self.imageArray[indexPath.row]
         
-        cell.titleLabel?.text = self.calDays[indexPath.row]
+        //cell.titleLabel?.text = self.calDays[indexPath.row]
+        self.dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+        cell.titleLabel?.text = self.dateFormatter.stringFromDate(calculatedDate!)
         
         return cell
     }
@@ -51,11 +57,12 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         if segue.identifier == "showImage"{
             let indexPaths = self.collectionView!.indexPathsForSelectedItems()!
             let indexPath = indexPaths[0] as NSIndexPath
-            
+            let calculatedDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Day, value: indexPath.row, toDate: self.currentDate, options: NSCalendarOptions.init(rawValue: 0))
             let vc = segue.destinationViewController as! NewViewController
             
             vc.image = self.imageArray[indexPath.row]!
-            vc.title = self.calDays[indexPath.row]
+            self.dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+            vc.title = self.dateFormatter.stringFromDate(calculatedDate!)
             vc.geekText = self.geekSayings[indexPath.row]
         }
     }
