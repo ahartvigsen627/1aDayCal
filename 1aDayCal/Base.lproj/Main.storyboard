@@ -90,31 +90,31 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xzs-nH-1by">
                                 <rect key="frame" x="20" y="90" width="560" height="420"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You may possibly be a geek when..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXd-Tm-UXc">
-                                <rect key="frame" x="20" y="72" width="560" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zwB-nk-XRR">
-                                <rect key="frame" x="20" y="518" width="560" height="62"/>
+                                <rect key="frame" x="20" y="518" width="560" height="69"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You may possibly be a geek when..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXd-Tm-UXc">
+                                <rect key="frame" x="20" y="69" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="zwB-nk-XRR" secondAttribute="bottom" constant="20" symbolic="YES" id="AOg-0c-raD"/>
+                            <constraint firstAttribute="bottom" secondItem="zwB-nk-XRR" secondAttribute="bottom" constant="13" id="AOg-0c-raD"/>
                             <constraint firstItem="xzs-nH-1by" firstAttribute="trailing" secondItem="zwB-nk-XRR" secondAttribute="trailing" id="BHJ-ln-cx2"/>
                             <constraint firstItem="fXd-Tm-UXc" firstAttribute="trailing" secondItem="3Y0-pH-bTj" secondAttribute="trailingMargin" id="G9v-Jc-oDX"/>
+                            <constraint firstItem="fXd-Tm-UXc" firstAttribute="bottom" secondItem="xzs-nH-1by" secondAttribute="top" id="IEG-qW-7Pb"/>
                             <constraint firstItem="zwB-nk-XRR" firstAttribute="top" secondItem="xzs-nH-1by" secondAttribute="bottom" constant="8" symbolic="YES" id="KEs-V4-c8X"/>
                             <constraint firstItem="xzs-nH-1by" firstAttribute="centerY" secondItem="3Y0-pH-bTj" secondAttribute="centerY" id="Yht-TD-aGS"/>
                             <constraint firstItem="xzs-nH-1by" firstAttribute="top" secondItem="6k9-vl-DDa" secondAttribute="bottom" constant="26" id="cj6-yn-Psj"/>
                             <constraint firstItem="fXd-Tm-UXc" firstAttribute="leading" secondItem="3Y0-pH-bTj" secondAttribute="leadingMargin" id="eo7-Q4-shY"/>
                             <constraint firstItem="fXd-Tm-UXc" firstAttribute="trailing" secondItem="xzs-nH-1by" secondAttribute="trailing" id="gES-BH-cYp"/>
-                            <constraint firstItem="fXd-Tm-UXc" firstAttribute="top" secondItem="6k9-vl-DDa" secondAttribute="bottom" constant="8" symbolic="YES" id="ktk-xg-u23"/>
                             <constraint firstItem="fXd-Tm-UXc" firstAttribute="leading" secondItem="xzs-nH-1by" secondAttribute="leading" id="pLA-Qn-Hd9"/>
                             <constraint firstItem="xzs-nH-1by" firstAttribute="leading" secondItem="zwB-nk-XRR" secondAttribute="leading" id="rqX-fM-tS6"/>
                         </constraints>
@@ -353,12 +353,6 @@
                                     <constraint firstAttribute="width" secondItem="2H2-eX-Hpc" secondAttribute="height" multiplier="4:3" id="FwX-ek-62s"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You may possibly be a geek when..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQD-gY-e89">
-                                <rect key="frame" x="20" y="72" width="560" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VrX-aB-Ut3">
                                 <rect key="frame" x="20" y="518" width="560" height="69"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -366,16 +360,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You may possibly be a geek when..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQD-gY-e89">
+                                <rect key="frame" x="20" y="69" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2H2-eX-Hpc" firstAttribute="leading" secondItem="HJg-HT-mRu" secondAttribute="leadingMargin" id="2Pz-oq-ZbG"/>
                             <constraint firstItem="cqP-Q7-1bO" firstAttribute="top" secondItem="VrX-aB-Ut3" secondAttribute="bottom" constant="13" id="NXG-Ig-ZMc"/>
+                            <constraint firstItem="EQD-gY-e89" firstAttribute="bottom" secondItem="2H2-eX-Hpc" secondAttribute="top" id="Rz7-79-KGX"/>
                             <constraint firstItem="VrX-aB-Ut3" firstAttribute="trailing" secondItem="2H2-eX-Hpc" secondAttribute="trailing" id="YY0-mC-eyT"/>
                             <constraint firstItem="EQD-gY-e89" firstAttribute="leading" secondItem="2H2-eX-Hpc" secondAttribute="leading" id="ezi-sh-f9L"/>
                             <constraint firstItem="2H2-eX-Hpc" firstAttribute="centerY" secondItem="HJg-HT-mRu" secondAttribute="centerY" id="gpx-Rg-fnI"/>
                             <constraint firstItem="VrX-aB-Ut3" firstAttribute="leading" secondItem="2H2-eX-Hpc" secondAttribute="leading" id="mXu-BP-1Y8"/>
-                            <constraint firstItem="EQD-gY-e89" firstAttribute="top" secondItem="5HW-Qu-J2S" secondAttribute="bottom" constant="8" symbolic="YES" id="sH0-kN-r7X"/>
                             <constraint firstItem="2H2-eX-Hpc" firstAttribute="trailing" secondItem="HJg-HT-mRu" secondAttribute="trailingMargin" id="yjx-cz-3dA"/>
                             <constraint firstItem="EQD-gY-e89" firstAttribute="trailing" secondItem="2H2-eX-Hpc" secondAttribute="trailing" id="z7g-xk-E8I"/>
                             <constraint firstItem="VrX-aB-Ut3" firstAttribute="top" secondItem="2H2-eX-Hpc" secondAttribute="bottom" constant="8" symbolic="YES" id="zXw-71-2bY"/>
