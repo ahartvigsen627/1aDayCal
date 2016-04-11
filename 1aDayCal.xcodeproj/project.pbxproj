@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6616C5831CBC614700E7D283 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616C5821CBC614700E7D283 /* TodayViewController.swift */; };
 		6623FA1E1CAB32E900809017 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6623FA1D1CAB32E900809017 /* CollectionViewCell.swift */; };
 		6623FA201CAB332A00809017 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6623FA1F1CAB332A00809017 /* NewViewController.swift */; };
 		6623FA221CAC5FA200809017 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6623FA211CAC5FA200809017 /* CollectionViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6616C5821CBC614700E7D283 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		6623FA1D1CAB32E900809017 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		6623FA1F1CAB332A00809017 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		6623FA211CAC5FA200809017 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				6623FA211CAC5FA200809017 /* CollectionViewController.swift */,
 				6623FA1D1CAB32E900809017 /* CollectionViewCell.swift */,
 				6623FA1F1CAB332A00809017 /* NewViewController.swift */,
+				6616C5821CBC614700E7D283 /* TodayViewController.swift */,
 				667DCF661B84D94800C0C085 /* Main.storyboard */,
 				667DCF691B84D94800C0C085 /* Images.xcassets */,
 				667DCF6B1B84D94800C0C085 /* LaunchScreen.xib */,
@@ -225,6 +228,7 @@
 			files = (
 				667DCF651B84D94800C0C085 /* ViewController.swift in Sources */,
 				667DCF631B84D94800C0C085 /* AppDelegate.swift in Sources */,
+				6616C5831CBC614700E7D283 /* TodayViewController.swift in Sources */,
 				6623FA1E1CAB32E900809017 /* CollectionViewCell.swift in Sources */,
 				6623FA201CAB332A00809017 /* NewViewController.swift in Sources */,
 				6623FA221CAC5FA200809017 /* CollectionViewController.swift in Sources */,

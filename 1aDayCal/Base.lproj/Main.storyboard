@@ -52,7 +52,7 @@
                                 </constraints>
                                 <state key="normal" title="Today"/>
                                 <connections>
-                                    <segue destination="bSR-4v-ZTe" kind="show" id="dp0-GA-BXN"/>
+                                    <segue destination="bSR-4v-ZTe" kind="show" identifier="showToday" id="dp0-GA-BXN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="1333" y="420"/>
         </scene>
-        <!--View Controller-->
+        <!--Today View Controller-->
         <scene sceneID="png-CF-geS">
             <objects>
-                <viewController id="bSR-4v-ZTe" sceneMemberID="viewController">
+                <viewController id="bSR-4v-ZTe" customClass="TodayViewController" customModule="_aDayCal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6k9-vl-DDa"/>
                         <viewControllerLayoutGuide type="bottom" id="3CX-xJ-NYo"/>
@@ -119,6 +119,10 @@
                             <constraint firstItem="xzs-nH-1by" firstAttribute="leading" secondItem="zwB-nk-XRR" secondAttribute="leading" id="rqX-fM-tS6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="xzs-nH-1by" id="Dgt-fB-JQd"/>
+                        <outlet property="textView" destination="zwB-nk-XRR" id="lna-6j-JwV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIb-PR-6C2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
