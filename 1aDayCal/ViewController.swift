@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let currentDate = NSDate()
+    let dateFormatter = NSDateFormatter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +24,12 @@ class ViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        <#code#>
+        if (segue.identifier == "showToday"){
+            let vc = segue.destinationViewController as! TodayViewController
+            
+            self.dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+            vc.title = self.dateFormatter.stringFromDate(currentDate)
+        }
     }
 
 
