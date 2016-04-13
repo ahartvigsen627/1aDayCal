@@ -284,7 +284,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4g-kn-THa">
                                 <rect key="frame" x="20" y="72" width="560" height="508"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Art Director Troy Georgell  Content Director Luke Hartvigsen  Technical Director Adam Hartvigsen  UX Director Jacob Hartvigsen">
+                                    <fragment content="Art Director Troy Georgell  Content Director Luke Hartvigsen  Technical Director Adam Hartvigsen  UX Director Jacob Hartvigsen">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
@@ -351,8 +351,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2H2-eX-Hpc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2H2-eX-Hpc">
                                 <rect key="frame" x="20" y="90" width="560" height="420"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2H2-eX-Hpc" secondAttribute="height" multiplier="4:3" id="FwX-ek-62s"/>
+                                </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VrX-aB-Ut3">
                                 <rect key="frame" x="20" y="518" width="560" height="69"/>
@@ -362,10 +365,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You may possibly be a geek when..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQD-gY-e89">
-                                <rect key="frame" x="20" y="90" width="560" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="v4A-x5-bHU"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="69" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -373,17 +373,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2H2-eX-Hpc" firstAttribute="trailing" secondItem="VrX-aB-Ut3" secondAttribute="trailing" id="61e-1L-1xK"/>
-                            <constraint firstItem="EQD-gY-e89" firstAttribute="trailing" secondItem="HJg-HT-mRu" secondAttribute="trailingMargin" id="FOz-aS-u4P"/>
-                            <constraint firstItem="2H2-eX-Hpc" firstAttribute="top" secondItem="EQD-gY-e89" secondAttribute="bottom" constant="-42" id="GoJ-rS-ctz"/>
-                            <constraint firstItem="2H2-eX-Hpc" firstAttribute="centerY" secondItem="HJg-HT-mRu" secondAttribute="centerY" id="KuE-5K-eDr"/>
-                            <constraint firstItem="EQD-gY-e89" firstAttribute="trailing" secondItem="2H2-eX-Hpc" secondAttribute="trailing" id="WF8-xF-mXM"/>
-                            <constraint firstItem="EQD-gY-e89" firstAttribute="top" secondItem="HJg-HT-mRu" secondAttribute="topMargin" constant="90" id="Ya7-Vc-puh"/>
-                            <constraint firstItem="EQD-gY-e89" firstAttribute="leading" secondItem="2H2-eX-Hpc" secondAttribute="leading" id="cDi-cZ-qNK"/>
-                            <constraint firstItem="2H2-eX-Hpc" firstAttribute="leading" secondItem="VrX-aB-Ut3" secondAttribute="leading" id="fAf-xR-gjp"/>
-                            <constraint firstItem="EQD-gY-e89" firstAttribute="leading" secondItem="HJg-HT-mRu" secondAttribute="leadingMargin" id="fQx-OL-uw5"/>
-                            <constraint firstItem="cqP-Q7-1bO" firstAttribute="top" secondItem="VrX-aB-Ut3" secondAttribute="bottom" constant="13" id="jdF-Rb-8nz"/>
-                            <constraint firstItem="VrX-aB-Ut3" firstAttribute="top" secondItem="2H2-eX-Hpc" secondAttribute="bottom" constant="8" symbolic="YES" id="nPB-gj-f9T"/>
+                            <constraint firstItem="2H2-eX-Hpc" firstAttribute="leading" secondItem="HJg-HT-mRu" secondAttribute="leadingMargin" id="2Pz-oq-ZbG"/>
+                            <constraint firstItem="cqP-Q7-1bO" firstAttribute="top" secondItem="VrX-aB-Ut3" secondAttribute="bottom" constant="13" id="NXG-Ig-ZMc"/>
+                            <constraint firstItem="EQD-gY-e89" firstAttribute="bottom" secondItem="2H2-eX-Hpc" secondAttribute="top" id="Rz7-79-KGX"/>
+                            <constraint firstItem="VrX-aB-Ut3" firstAttribute="trailing" secondItem="2H2-eX-Hpc" secondAttribute="trailing" id="YY0-mC-eyT"/>
+                            <constraint firstItem="EQD-gY-e89" firstAttribute="leading" secondItem="2H2-eX-Hpc" secondAttribute="leading" id="ezi-sh-f9L"/>
+                            <constraint firstItem="2H2-eX-Hpc" firstAttribute="centerY" secondItem="HJg-HT-mRu" secondAttribute="centerY" id="gpx-Rg-fnI"/>
+                            <constraint firstItem="VrX-aB-Ut3" firstAttribute="leading" secondItem="2H2-eX-Hpc" secondAttribute="leading" id="mXu-BP-1Y8"/>
+                            <constraint firstItem="2H2-eX-Hpc" firstAttribute="trailing" secondItem="HJg-HT-mRu" secondAttribute="trailingMargin" id="yjx-cz-3dA"/>
+                            <constraint firstItem="EQD-gY-e89" firstAttribute="trailing" secondItem="2H2-eX-Hpc" secondAttribute="trailing" id="z7g-xk-E8I"/>
+                            <constraint firstItem="VrX-aB-Ut3" firstAttribute="top" secondItem="2H2-eX-Hpc" secondAttribute="bottom" constant="8" symbolic="YES" id="zXw-71-2bY"/>
                         </constraints>
                     </view>
                     <connections>
