@@ -12,16 +12,15 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var calDays = ["1"]
+    let dateFormatter = NSDateFormatter()
+    
     var imageArray = [UIImage(named: "Apple Devices")]
     var geekSayings = ["you own a Mac, iPad and iPhone."]
-    
-    let currentDate = NSDate()
-    let dateFormatter = NSDateFormatter()
+    var elapseDays = 1
+    var startDate = NSDate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -32,16 +31,15 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
     
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.calDays.count
+        return self.elapseDays
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CollectionViewCell
-        let calculatedDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Day, value: indexPath.row, toDate: self.currentDate, options: NSCalendarOptions.init(rawValue: 0))
+        let calculatedDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Day, value: indexPath.row, toDate: self.startDate, options: NSCalendarOptions.init(rawValue: 0))
         
         cell.imageView?.image = self.imageArray[indexPath.row]
         
-        //cell.titleLabel?.text = self.calDays[indexPath.row]
         self.dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
         cell.titleLabel?.text = self.dateFormatter.stringFromDate(calculatedDate!)
         
@@ -57,7 +55,7 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         if segue.identifier == "showImage"{
             let indexPaths = self.collectionView!.indexPathsForSelectedItems()!
             let indexPath = indexPaths[0] as NSIndexPath
-            let calculatedDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Day, value: indexPath.row, toDate: self.currentDate, options: NSCalendarOptions.init(rawValue: 0))
+            let calculatedDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Day, value: indexPath.row, toDate: self.startDate, options: NSCalendarOptions.init(rawValue: 0))
             let vc = segue.destinationViewController as! NewViewController
             
             vc.image = self.imageArray[indexPath.row]!
