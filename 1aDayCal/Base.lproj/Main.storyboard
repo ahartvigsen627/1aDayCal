@@ -286,7 +286,18 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4g-kn-THa">
                                 <rect key="frame" x="20" y="72" width="560" height="508"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Art Director Troy Georgell  Content Director Luke Hartvigsen  Technical Director Adam Hartvigsen  UX Director Jacob Hartvigsen">
+                                    <fragment>
+                                        <string key="content">Art Director 
+Troy Georgell
+
+Content Director 
+Luke Hartvigsen  
+
+Technical Director 
+Adam Hartvigsen
+  
+UX Director 
+Jacob Hartvigsen</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>

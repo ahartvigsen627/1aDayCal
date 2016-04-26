@@ -1,4 +1,4 @@
-//
+ //
 //  ViewController.swift
 //  1aDayCal
 //
@@ -52,15 +52,25 @@ class ViewController: UIViewController {
             self.dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
             
             vc.title = self.dateFormatter.stringFromDate(currentDate)
-            vc.image = self.imageArray[self.elapseDays]!
-            vc.geekText = self.geekSayings[self.elapseDays]
+            
+            if(self.elapseDays > self.imageArray.count){
+                vc.image = UIImage(named: "mist")!
+                vc.geekText = "you reach the end of this calendar. We hope you had a good year!"
+            }else{
+                vc.image = self.imageArray[self.elapseDays]!
+                vc.geekText = self.geekSayings[self.elapseDays]
+            }
         }else if(segue.identifier == "previousDays"){
             let vc = segue.destinationViewController as! CollectionViewController
             
             vc.imageArray = self.imageArray
             vc.geekSayings = self.geekSayings
-            vc.elapseDays = self.elapseDays
             vc.startDate = self.startDate
+            if(self.elapseDays > self.imageArray.count){
+                vc.elapseDays = self.imageArray.count
+            }else{
+                vc.elapseDays = self.elapseDays
+            }
         }
     }
 
