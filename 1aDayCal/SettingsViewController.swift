@@ -13,18 +13,18 @@ class SettingsViewController: UIViewController {
     let prefs = NSUserDefaults.standardUserDefaults()
     let dateFormatter = NSDateFormatter()
     
-//    var resetAlert = UIAlertController(title: "Reset", message: "Are you sure you want to reset your calendar?", preferredStyle: UIAlertControllerStyle.Alert)
+    var resetAlert = UIAlertController(title: "Reset", message: "Are you sure you want to reset your calendar?", preferredStyle: UIAlertControllerStyle.Alert)
 
     @IBAction func resetCalendar(sender: AnyObject) {
-//        resetAlert.addAction(UIAlertAction(title: "OK", style: .Default, handler: {(action: UIAlertAction!) in
+        resetAlert.addAction(UIAlertAction(title: "OK", style: .Default, handler: {(action: UIAlertAction!) in
         self.dateFormatter.dateFormat = "yyyy-MM-dd"
         self.prefs.setValue(self.dateFormatter.stringFromDate(NSDate()), forKey: "StartDate")
-//        }))
-//        
-//        resetAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: {(action: UIAlertAction!) in
-//        }))
+        }))
+
+        resetAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: {(action: UIAlertAction!) in
+        }))
         
-//        presentViewController(refreshAlert, animated: true, completion: nil)
+        presentViewController(resetAlert, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
