@@ -17,6 +17,7 @@
 		667DCF6A1B84D94800C0C085 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 667DCF691B84D94800C0C085 /* Images.xcassets */; };
 		667DCF6D1B84D94800C0C085 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 667DCF6B1B84D94800C0C085 /* LaunchScreen.xib */; };
 		667DCF791B84D94800C0C085 /* _aDayCalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667DCF781B84D94800C0C085 /* _aDayCalTests.swift */; };
+		9530C6431CD017F4008D77AC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9530C6421CD017F4008D77AC /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		667DCF721B84D94800C0C085 /* 1aDayCalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 1aDayCalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		667DCF771B84D94800C0C085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		667DCF781B84D94800C0C085 /* _aDayCalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _aDayCalTests.swift; sourceTree = "<group>"; };
+		9530C6421CD017F4008D77AC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				6623FA211CAC5FA200809017 /* CollectionViewController.swift */,
 				6623FA1D1CAB32E900809017 /* CollectionViewCell.swift */,
 				6623FA1F1CAB332A00809017 /* NewViewController.swift */,
+				9530C6421CD017F4008D77AC /* SettingsViewController.swift */,
 				6616C5821CBC614700E7D283 /* TodayViewController.swift */,
 				667DCF661B84D94800C0C085 /* Main.storyboard */,
 				667DCF691B84D94800C0C085 /* Images.xcassets */,
@@ -228,6 +231,7 @@
 			files = (
 				667DCF651B84D94800C0C085 /* ViewController.swift in Sources */,
 				667DCF631B84D94800C0C085 /* AppDelegate.swift in Sources */,
+				9530C6431CD017F4008D77AC /* SettingsViewController.swift in Sources */,
 				6616C5831CBC614700E7D283 /* TodayViewController.swift in Sources */,
 				6623FA1E1CAB32E900809017 /* CollectionViewCell.swift in Sources */,
 				6623FA201CAB332A00809017 /* NewViewController.swift in Sources */,

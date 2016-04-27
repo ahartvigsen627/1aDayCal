@@ -215,7 +215,7 @@
         <!--Settings-->
         <scene sceneID="jvz-XM-t2M">
             <objects>
-                <viewController id="enE-T8-ufd" sceneMemberID="viewController">
+                <viewController id="enE-T8-ufd" customClass="SettingsViewController" customModule="_aDayCal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eRd-Up-LEb"/>
                         <viewControllerLayoutGuide type="bottom" id="mLf-jS-Ehz"/>
@@ -241,6 +241,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIz-Eb-lCJ">
                                 <rect key="frame" x="20" y="148" width="560" height="30"/>
                                 <state key="normal" title="Reset Calendar"/>
+                                <connections>
+                                    <action selector="resetCalendar:" destination="enE-T8-ufd" eventType="touchUpInside" id="TTx-YI-phf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1Z-rb-2XE">
                                 <rect key="frame" x="20" y="186" width="560" height="30"/>

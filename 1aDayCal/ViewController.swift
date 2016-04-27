@@ -53,7 +53,7 @@ class ViewController: UIViewController {
             
             vc.title = self.dateFormatter.stringFromDate(currentDate)
             
-            if(self.elapseDays > self.imageArray.count){
+            if(self.elapseDays >= self.imageArray.count){
                 vc.image = UIImage(named: "mist")!
                 vc.geekText = "you reach the end of this calendar. We hope you had a good year!"
             }else{
