@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uZl-rX-4Fx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uZl-rX-4Fx">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -386,16 +386,27 @@ Jacob Hartvigsen</string>
                                     <constraint firstAttribute="width" secondItem="2H2-eX-Hpc" secondAttribute="height" multiplier="4:3" id="FwX-ek-62s"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jc-Ob-eRI">
+                                <rect key="frame" x="555" y="72" width="25" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="4pW-yA-cpo"/>
+                                    <constraint firstAttribute="height" constant="35" id="To0-rq-Q3m"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Share"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2H2-eX-Hpc" firstAttribute="leading" secondItem="HJg-HT-mRu" secondAttribute="leadingMargin" id="2Pz-oq-ZbG"/>
+                            <constraint firstItem="7Jc-Ob-eRI" firstAttribute="trailing" secondItem="EQD-gY-e89" secondAttribute="trailing" id="EPX-rS-PAJ"/>
+                            <constraint firstItem="7Jc-Ob-eRI" firstAttribute="top" secondItem="5HW-Qu-J2S" secondAttribute="bottom" constant="8" symbolic="YES" id="HZg-wy-1za"/>
                             <constraint firstItem="cqP-Q7-1bO" firstAttribute="top" secondItem="VrX-aB-Ut3" secondAttribute="bottom" constant="13" id="NXG-Ig-ZMc"/>
                             <constraint firstItem="EQD-gY-e89" firstAttribute="bottom" secondItem="2H2-eX-Hpc" secondAttribute="top" id="Rz7-79-KGX"/>
                             <constraint firstItem="VrX-aB-Ut3" firstAttribute="trailing" secondItem="2H2-eX-Hpc" secondAttribute="trailing" id="YY0-mC-eyT"/>
                             <constraint firstItem="EQD-gY-e89" firstAttribute="leading" secondItem="2H2-eX-Hpc" secondAttribute="leading" id="ezi-sh-f9L"/>
                             <constraint firstItem="2H2-eX-Hpc" firstAttribute="centerY" secondItem="HJg-HT-mRu" secondAttribute="centerY" id="gpx-Rg-fnI"/>
                             <constraint firstItem="VrX-aB-Ut3" firstAttribute="leading" secondItem="2H2-eX-Hpc" secondAttribute="leading" id="mXu-BP-1Y8"/>
+                            <constraint firstItem="7Jc-Ob-eRI" firstAttribute="baseline" secondItem="EQD-gY-e89" secondAttribute="baseline" id="msB-dr-6Kw"/>
                             <constraint firstItem="2H2-eX-Hpc" firstAttribute="trailing" secondItem="HJg-HT-mRu" secondAttribute="trailingMargin" id="yjx-cz-3dA"/>
                             <constraint firstItem="EQD-gY-e89" firstAttribute="trailing" secondItem="2H2-eX-Hpc" secondAttribute="trailing" id="z7g-xk-E8I"/>
                             <constraint firstItem="VrX-aB-Ut3" firstAttribute="top" secondItem="2H2-eX-Hpc" secondAttribute="bottom" constant="8" symbolic="YES" id="zXw-71-2bY"/>
@@ -431,6 +442,7 @@ Jacob Hartvigsen</string>
     </scenes>
     <resources>
         <image name="GMFLogo" width="572" height="342"/>
+        <image name="Share" width="96" height="138"/>
         <image name="Venn Test Expanded" width="992" height="1244"/>
     </resources>
 </document>
