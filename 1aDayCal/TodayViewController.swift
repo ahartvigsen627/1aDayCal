@@ -15,6 +15,7 @@ class TodayViewController: UIViewController {
     
     var image = UIImage()
     var geekText = "test"
+    var geekLink = "http://www.apple.com"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,11 @@ class TodayViewController: UIViewController {
     }
     
 
+    @IBAction func learnMore(sender: AnyObject) {
+//        if let url = NSURL(fileURLWithPath: self.geekLink){
+//            UIApplication.sharedApplication().openURL(url)
+//        }
+    }
     /*
     // MARK: - Navigation
 

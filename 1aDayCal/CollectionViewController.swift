@@ -16,6 +16,7 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
     
     var imageArray = [UIImage(named: "Apple Devices")]
     var geekSayings = ["you own a Mac, iPad and iPhone."]
+    var geekLinks = ["http://www.apple.com"]
     var elapseDays = 1
     var startDate = NSDate()
     
@@ -63,6 +64,7 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
             self.dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
             vc.title = self.dateFormatter.stringFromDate(calculatedDate!)
             vc.geekText = self.geekSayings[indexPath.row]
+            vc.geekLink = self.geekLinks[indexPath.row]
         }
     }
     

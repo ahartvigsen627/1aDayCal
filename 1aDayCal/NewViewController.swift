@@ -17,6 +17,7 @@ class NewViewController: UIViewController {
     
     var image = UIImage()
     var geekText = "test"
+    var geekLink = "http://www.apple.com"
     
     override func viewDidLoad() {
         super.viewDidLoad()
