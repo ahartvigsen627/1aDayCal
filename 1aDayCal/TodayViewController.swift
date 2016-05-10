@@ -31,6 +31,18 @@ class TodayViewController: UIViewController {
     }
     
     
+    @IBAction func shareButton(sender: AnyObject) {
+        if let myWebsite = NSURL(string: "https://www.linkedin.com/in/adam-hartvigsen-a8120547"){
+            let message :String = "You may possibly be a geek when \(geekText)"
+            let shareImage :UIImage = self.image
+            let shareItems :Array = [message, shareImage, myWebsite]
+            let activityController = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)
+            if(UIDevice.currentDevice().userInterfaceIdiom == .Pad){
+                activityController.popoverPresentationController?.sourceView = self.view
+            }
+            self.presentViewController(activityController, animated: true, completion: nil)
+        }
+    }
     
 
     /*
