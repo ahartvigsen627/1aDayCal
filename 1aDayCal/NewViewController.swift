@@ -13,6 +13,9 @@ class NewViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
     
+    @IBAction func shareButton(sender: AnyObject) {
+    }
+    
     var image = UIImage()
     var geekText = "test"
     
