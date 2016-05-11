@@ -426,6 +426,9 @@ Jacob Hartvigsen</string>
                                     <constraint firstAttribute="width" constant="80" id="eAO-jl-1jB"/>
                                 </constraints>
                                 <state key="normal" title="Learn More"/>
+                                <connections>
+                                    <action selector="LearnMore:" destination="fHi-ab-QOC" eventType="touchUpInside" id="tC2-eu-Y1y"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

@@ -44,6 +44,12 @@ class NewViewController: UIViewController {
         self.presentViewController(activityController, animated: true, completion: nil)
         }
     }
+    
+    
+    @IBAction func LearnMore(sender: AnyObject) {
+        let url = NSURL(string: geekLink)
+        UIApplication.sharedApplication().openURL(url!)
+    }
     /*
     // MARK: - Navigation
 

@@ -47,12 +47,11 @@ class TodayViewController: UIViewController {
     
 
     @IBAction func learnMore(sender: AnyObject) {
-//        if let url = NSURL(fileURLWithPath: self.geekLink){
-//            UIApplication.sharedApplication().openURL(url)
-//        }
+        let url = NSURL(string: geekLink)
+        UIApplication.sharedApplication().openURL(url!)
     }
     /*
-    // MARK: - Navigation
+    // MARK: - Navigat!ion
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
