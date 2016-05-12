@@ -10,10 +10,13 @@ import UIKit
 
 class CollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    // This Outlet is connected to the collection view on the Previous Days page.
     @IBOutlet weak var collectionView: UICollectionView!
     
+    // This constant is used to handle any date formatting needs for the Previous Days page.
     let dateFormatter = NSDateFormatter()
     
+    // These default variable are set in the overrided prepareForSegue function of ViewController.
     var imageArray = [UIImage(named: "Apple Devices")]
     var geekSayings = ["you own a Mac, iPad and iPhone."]
     var geekLinks = ["http://www.apple.com"]
@@ -30,7 +33,7 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         // Dispose of any resources that can be recreated.
     }
     
-
+    // Returns the number of elapsed day to determine the number of collectionView cells to create.
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.elapseDays
     }
@@ -60,23 +63,11 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
             let vc = segue.destinationViewController as! NewViewController
             
             vc.image = self.imageArray[indexPath.row]!
-//            vc.title = self.calDays[indexPath.row]
             self.dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
             vc.title = self.dateFormatter.stringFromDate(calculatedDate!)
             vc.geekText = self.geekSayings[indexPath.row]
             vc.geekLink = self.geekLinks[indexPath.row]
         }
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
