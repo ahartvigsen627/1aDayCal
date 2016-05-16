@@ -21,7 +21,7 @@ class SettingsViewController: UIViewController {
      This action funtion activates the Reset Calendar alert. Upon OK being selected the StartDate User Default is set to the current date. Upon cancel being selected nothing happens and the alert is dimissed
      
      - Parameters
-        sender: The object that sends the call
+        sender: The object(button) that sends the call
     */
     @IBAction func resetCalendar(sender: AnyObject) {
         resetAlert.addAction(UIAlertAction(title: "OK", style: .Default, handler: {(action: UIAlertAction!) in

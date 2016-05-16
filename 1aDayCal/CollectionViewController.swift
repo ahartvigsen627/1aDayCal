@@ -69,5 +69,4 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
             vc.geekLink = self.geekLinks[indexPath.row]
         }
     }
-
 }

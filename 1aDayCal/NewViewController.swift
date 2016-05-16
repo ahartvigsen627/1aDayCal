@@ -10,15 +10,17 @@ import UIKit
 
 class NewViewController: UIViewController {
 
-    // These Outlets connect to the imageView and textView on the Previous Days Detail page.
+    /// These Outlets connect to the imageView and textView on the Previous Days Detail page.
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
     
-    // These default variable get set in the overrided prepareForSegue function of CollectionViewController
+    /// These default variable get set in the overrided prepareForSegue function of CollectionViewController
     var image = UIImage()
     var geekText = "test"
     var geekLink = "http://www.apple.com"
     
+    /// In viewDidLoad the image component of imageView is set to image which is passed in from prepareForSegue in CollectionViewController.
+    /// The text component of textView is set to the String that is passed in from prepareForSegue in CollectionViewController.
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,7 +38,7 @@ class NewViewController: UIViewController {
      the sharing popup.
      
      - Parameters:
-        - sender: The object that sends the call
+        - sender: The object(button) that sends the call
     */
     @IBAction func shareButton(sender: AnyObject) {
         if let myWebsite = NSURL(string: "https://itunes.apple.com/us/genre/ios-games/id6014?mt=8"){
@@ -55,7 +57,7 @@ class NewViewController: UIViewController {
      This action handles the Learn More button. It takes the geek link and opens it in Safari
      
      - Parameters:
-        - sender: The object that sends the call
+        - sender: The object(button) that sends the call
     */
     @IBAction func LearnMore(sender: AnyObject) {
         let url = NSURL(string: geekLink)
