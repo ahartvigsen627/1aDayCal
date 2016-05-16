@@ -33,7 +33,7 @@ class TodayViewController: UIViewController {
     
     
     @IBAction func shareButton(sender: AnyObject) {
-        if let myWebsite = NSURL(string: "https://www.linkedin.com/in/adam-hartvigsen-a8120547"){
+        if let myWebsite = NSURL(string: "https://itunes.apple.com/us/genre/ios-games/id6014?mt=8"){
             let message :String = "You may possibly be a geek when \(geekText)"
             let shareImage :UIImage = self.image
             let shareItems :Array = [message, shareImage, myWebsite]
@@ -50,14 +50,4 @@ class TodayViewController: UIViewController {
         let url = NSURL(string: geekLink)
         UIApplication.sharedApplication().openURL(url!)
     }
-    /*
-    // MARK: - Navigat!ion
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

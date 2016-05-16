@@ -10,11 +10,19 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
+    /// These constants get the User Defaults for the program and the Date Formatter
     let prefs = NSUserDefaults.standardUserDefaults()
     let dateFormatter = NSDateFormatter()
     
+    /// This variable contains the set up for the Reset Calendar allert
     var resetAlert = UIAlertController(title: "Reset", message: "Are you sure you want to reset your calendar?", preferredStyle: UIAlertControllerStyle.Alert)
-
+    
+    /**
+     This action funtion activates the Reset Calendar alert. Upon OK being selected the StartDate User Default is set to the current date. Upon cancel being selected nothing happens and the alert is dimissed
+     
+     - Parameters
+        sender: The object that sends the call
+    */
     @IBAction func resetCalendar(sender: AnyObject) {
         resetAlert.addAction(UIAlertAction(title: "OK", style: .Default, handler: {(action: UIAlertAction!) in
         self.dateFormatter.dateFormat = "yyyy-MM-dd"
@@ -37,16 +45,4 @@ class SettingsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
