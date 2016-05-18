@@ -18,9 +18,12 @@ class ViewController: UIViewController {
     let geekLinks = ["http://www.apple.com", "http://matrixsaver.en.softonic.com/mac", "https://www.google.com/search?client=safari&rls=en&q=how+to+use+more+than+one+monitor&ie=UTF-8&oe=UTF-8", "http://theportalwiki.com/wiki/Aperture_Science", "http://www.adobe.com", "https://en.wikipedia.org/wiki/Vulcan_salute", "http://www.minionsmovie.com/minions.html", "http://starwars.wikia.com/wiki/Alliance_Fleet", "http://www.thinkgeek.com/homeoffice/mugs-travel/", "https://en.wikipedia.org/wiki/Star_Wars_Weekends", "http://mally.stanford.edu/~sr/computing/basic-unix.html", "https://www.microsoft.com/en-us/windows/phones", "http://windows.microsoft.com/en-us/windows/windows-update"]
     let dateFormatter = NSDateFormatter()
     let prefs = NSUserDefaults.standardUserDefaults()
+    let notifications = UILocalNotification()
     
     /// These variables are initially declaired and given default values here. They are then used later to calculate and store the correct values in viewDidLoad()
     var dateAsString = "2016-04-08"
+    var notificationDateString = "2016-04-08"
+    var notificationDate = NSDate()
     var currentDate = NSDate()
     var startDate = NSDate()
     var elapseDays = 1
@@ -42,9 +45,20 @@ class ViewController: UIViewController {
         }
         
         currentDate = NSDate()
+        notificationDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Day, value: 1, toDate: self.currentDate, options: NSCalendarOptions.init(rawValue: 0))!
+        notificationDateString = "\(dateFormatter.stringFromDate(notificationDate)) 07:00"
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        notificationDate = dateFormatter.dateFromString(notificationDateString)!
+        notifications.fireDate = notificationDate
+        notifications.alertBody = "Check out Today in your 1 a day calendar!"
+        notifications.alertAction = "open calendar."
+        notifications.soundName = UILocalNotificationDefaultSoundName
+        notifications.repeatInterval = NSCalendarUnit.Day
+        UIApplication.sharedApplication().scheduleLocalNotification(notifications)
+        
+        dateFormatter.dateFormat = "yyyy-MM-dd"
         dateAsString = prefs.stringForKey("StartDate")!
         startDate = dateFormatter.dateFromString(dateAsString)!
-        
         diffDateComponents = NSCalendar.currentCalendar().components([NSCalendarUnit.Day], fromDate: startDate, toDate: currentDate, options: NSCalendarOptions.init(rawValue: 0))
         elapseDays = diffDateComponents.day
         // Do any additional setup after loading the view, typically from a nib.
