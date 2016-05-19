@@ -30,9 +30,7 @@ class ViewController: UIViewController {
     var diffDateComponents = NSCalendar.currentCalendar().components([NSCalendarUnit.Day], fromDate: NSDate(), toDate: NSDate(), options: NSCalendarOptions.init(rawValue: 0))
 
     /**
-     In viewDidLoad, dateFormatter has the dateFormat set. Then prefs is used to check if the app has been launched before. If it has not then the HasBeenLaunched variable is set to true
-     and the startDate is set to the current date on the device. The currentDate is set to the current date on the device, and the startDate is grabbed from prefs. The last thing is the 
-     elapsed days from startDate to CurrentDate is calculated then stored.
+     In viewDidLoad, dateFormatter has the dateFormat set. Then prefs is used to check if the app has been launched before. If it has not then the HasBeenLaunched variable is set to true and the startDate is set to the current date on the device. The currentDate is set to the current date on the device, and the startDate is grabbed from prefs. The last thing is the elapsed days from startDate to CurrentDate is calculated then stored.
     */
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,12 +68,7 @@ class ViewController: UIViewController {
     }
     
     /**
-     Function prepareForSegue does preparation needed before leaving the main page. First viewDidLoad() is called to make sure that dates and elaspsedDays are updated. Next the segue is 
-     detemined as either showToday or previousDays. The specific view controller is the grabbed based on the segue. For showToday the date is formatted and sent to the title of the view
-     controller. It is then determined if the elapsedDays is greater than the size of the 3 main arrays. If it is larger a default image, saying and link are sent to the view controller.
-     If elapseDays is smaller then the objects at the position of the elapseDays in the array are sent to the view controller. If the segue is previousDays then the 3 arrays and startDate
-     are sent to the view controller. It then checks if elapseDays is greater than the size of the 3 arrays. If it is then size of the arrays is sent to the view controller. Otherwise 
-     elapseDays is sent
+     Function prepareForSegue does preparation needed before leaving the main page. First viewDidLoad() is called to make sure that dates and elaspsedDays are updated. Next the segue is detemined as either showToday or previousDays. The specific view controller is the grabbed based on the segue. For showToday the date is formatted and sent to the title of the view controller. It is then determined if the elapsedDays is greater than the size of the 3 main arrays. If it is larger a default image, saying and link are sent to the view controller. If elapseDays is smaller then the objects at the position of the elapseDays in the array are sent to the view controller. If the segue is previousDays then the 3 arrays and startDate are sent to the view controller. It then checks if elapseDays is greater than the size of the 3 arrays. If it is then size of the arrays is sent to the view controller. Otherwise elapseDays is sent
      
      - parameters
         - sugue:  The specific segue that has been sent with the call.
