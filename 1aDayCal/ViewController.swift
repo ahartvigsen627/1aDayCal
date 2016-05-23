@@ -21,8 +21,8 @@ class ViewController: UIViewController {
     let notifications = UILocalNotification()
     
     /// These variables are initially declaired and given default values here. They are then used later to calculate and store the correct values in viewDidLoad()
-    var dateAsString = "2016-04-08"
-    var notificationDateString = "2016-04-08"
+    var dateAsString = "2016-01-01"
+    var notificationDateString = "2016-01-01"
     var notificationDate = NSDate()
     var currentDate = NSDate()
     var startDate = NSDate()
@@ -37,26 +37,26 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         dateFormatter.dateFormat = "yyyy-MM-dd"
+        currentDate = NSDate()
         
         if(!prefs.boolForKey("HasBeenLaunched")){
             prefs.setBool(true, forKey: "HasBeenLaunched")
             prefs.setValue(dateFormatter.stringFromDate(currentDate), forKey: "StartDate")
+            
+            notificationDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Day, value: 1, toDate: self.currentDate, options: NSCalendarOptions.init(rawValue: 0))!
+            notificationDateString = "\(dateFormatter.stringFromDate(notificationDate)) 8:00"
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+            notificationDate = dateFormatter.dateFromString(notificationDateString)!
+            notifications.fireDate = notificationDate
+            notifications.alertBody = "Check out Today in your 1 a day calendar!"
+            notifications.alertAction = "open calendar."
+            notifications.soundName = UILocalNotificationDefaultSoundName
+            notifications.applicationIconBadgeNumber = notificationIcon
+            notifications.repeatInterval = NSCalendarUnit.Day
+            UIApplication.sharedApplication().scheduleLocalNotification(notifications)
+            dateFormatter.dateFormat = "yyyy-MM-dd"
         }
         
-        currentDate = NSDate()
-        notificationDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Day, value: 1, toDate: self.currentDate, options: NSCalendarOptions.init(rawValue: 0))!
-        notificationDateString = "\(dateFormatter.stringFromDate(notificationDate)) 8:00"
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
-        notificationDate = dateFormatter.dateFromString(notificationDateString)!
-        notifications.fireDate = notificationDate
-        notifications.alertBody = "Check out Today in your 1 a day calendar!"
-        notifications.alertAction = "open calendar."
-        notifications.soundName = UILocalNotificationDefaultSoundName
-        notifications.applicationIconBadgeNumber = notificationIcon
-        notifications.repeatInterval = NSCalendarUnit.Day
-        UIApplication.sharedApplication().scheduleLocalNotification(notifications)
-        
-        dateFormatter.dateFormat = "yyyy-MM-dd"
         dateAsString = prefs.stringForKey("StartDate")!
         startDate = dateFormatter.dateFromString(dateAsString)!
         diffDateComponents = NSCalendar.currentCalendar().components([NSCalendarUnit.Day], fromDate: startDate, toDate: currentDate, options: NSCalendarOptions.init(rawValue: 0))
