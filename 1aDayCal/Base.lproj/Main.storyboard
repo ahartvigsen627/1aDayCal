@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uZl-rX-4Fx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uZl-rX-4Fx">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -36,9 +36,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v78-9a-B7h">
-                                <rect key="frame" x="480" y="72" width="100" height="30"/>
+                                <rect key="frame" x="470" y="72" width="110" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="tyQ-12-CLg"/>
+                                    <constraint firstAttribute="width" constant="110" id="tyQ-12-CLg"/>
                                 </constraints>
                                 <state key="normal" title="Previous Days"/>
                                 <connections>
@@ -69,7 +69,9 @@
                             <constraint firstItem="g7A-Ba-X8y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uTm-ym-Qg4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="You May Possibly Be a Geek When..." id="6dS-SP-wMP"/>
+                    <navigationItem key="navigationItem" title="You May Possibly Be a Geek When..." id="6dS-SP-wMP">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ZdJ-bJ-CVT"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,9 +119,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xao-su-5X9">
-                                <rect key="frame" x="20" y="72" width="80" height="30"/>
+                                <rect key="frame" x="20" y="72" width="90" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="Eoo-8s-xSO"/>
+                                    <constraint firstAttribute="width" constant="90" id="Eoo-8s-xSO"/>
                                 </constraints>
                                 <state key="normal" title="Learn More"/>
                                 <connections>
@@ -421,9 +423,9 @@ Jacob Hartvigsen</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waH-5H-5be">
-                                <rect key="frame" x="20" y="72" width="80" height="30"/>
+                                <rect key="frame" x="20" y="72" width="90" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="eAO-jl-1jB"/>
+                                    <constraint firstAttribute="width" constant="90" id="eAO-jl-1jB"/>
                                 </constraints>
                                 <state key="normal" title="Learn More"/>
                                 <connections>
