@@ -43,17 +43,17 @@ class ViewController: UIViewController {
             prefs.setBool(true, forKey: "HasBeenLaunched")
             prefs.setValue(dateFormatter.stringFromDate(currentDate), forKey: "StartDate")
             
-//            notificationDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Day, value: 1, toDate: self.currentDate, options: NSCalendarOptions.init(rawValue: 0))!
-//            notificationDateString = "\(dateFormatter.stringFromDate(notificationDate)) 8:00"
-//            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
-//            notificationDate = dateFormatter.dateFromString(notificationDateString)!
-//            notifications.fireDate = notificationDate
-//            notifications.alertBody = "Check out Today in your 1 a day calendar!"
-//            notifications.alertAction = "open calendar."
-//            notifications.soundName = UILocalNotificationDefaultSoundName
-////            notifications.applicationIconBadgeNumber = 0 //notificationIcon
-//            notifications.repeatInterval = NSCalendarUnit.Day
-//            UIApplication.sharedApplication().scheduleLocalNotification(notifications)
+            notificationDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Day, value: 1, toDate: self.currentDate, options: NSCalendarOptions.init(rawValue: 0))!
+            notificationDateString = "\(dateFormatter.stringFromDate(notificationDate)) 8:00"
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+            notificationDate = dateFormatter.dateFromString(notificationDateString)!
+            notifications.fireDate = notificationDate
+            notifications.alertBody = "Check out Today in your 1 a day calendar!"
+            notifications.alertAction = "open calendar."
+            notifications.soundName = UILocalNotificationDefaultSoundName
+//            notifications.applicationIconBadgeNumber = 0 //notificationIcon
+            notifications.repeatInterval = NSCalendarUnit.Day
+            UIApplication.sharedApplication().scheduleLocalNotification(notifications)
             dateFormatter.dateFormat = "yyyy-MM-dd"
         }
         

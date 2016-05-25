@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uZl-rX-4Fx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uZl-rX-4Fx">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -36,9 +36,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v78-9a-B7h">
-                                <rect key="frame" x="480" y="72" width="100" height="30"/>
+                                <rect key="frame" x="470" y="72" width="110" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="tyQ-12-CLg"/>
+                                    <constraint firstAttribute="width" constant="110" id="tyQ-12-CLg"/>
                                 </constraints>
                                 <state key="normal" title="Previous Days"/>
                                 <connections>
@@ -69,7 +69,10 @@
                             <constraint firstItem="g7A-Ba-X8y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uTm-ym-Qg4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="You May Possibly Be a Geek When..." id="6dS-SP-wMP"/>
+                    <navigationItem key="navigationItem" title="You May Possibly Be a Geek When..." id="6dS-SP-wMP">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="qGy-Ka-bCq"/>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,9 +120,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xao-su-5X9">
-                                <rect key="frame" x="20" y="72" width="80" height="30"/>
+                                <rect key="frame" x="20" y="72" width="90" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="Eoo-8s-xSO"/>
+                                    <constraint firstAttribute="width" constant="90" id="Eoo-8s-xSO"/>
                                 </constraints>
                                 <state key="normal" title="Learn More"/>
                                 <connections>
@@ -145,6 +148,7 @@
                             <constraint firstItem="Bla-4P-U0x" firstAttribute="trailing" secondItem="xzs-nH-1by" secondAttribute="trailing" id="sSa-Lh-Ygd"/>
                         </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="xzs-nH-1by" id="Dgt-fB-JQd"/>
                         <outlet property="textView" destination="zwB-nk-XRR" id="lna-6j-JwV"/>
@@ -227,6 +231,7 @@
                     <navigationItem key="navigationItem" title="Previous Days" id="dQ5-dF-UMw">
                         <barButtonItem key="backBarButtonItem" title="Back" id="055-nT-OBy"/>
                     </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="q51-o1-80u" id="6Y4-7e-aPh"/>
                         <segue destination="fHi-ab-QOC" kind="show" identifier="showImage" id="5Fb-de-lVX"/>
@@ -293,6 +298,7 @@
                     <navigationItem key="navigationItem" title="Settings" id="7n5-os-2dw">
                         <barButtonItem key="backBarButtonItem" title="Back" id="cTi-b5-vV0"/>
                     </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QjV-tF-AKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -344,6 +350,7 @@ Jacob Hartvigsen</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Credits" id="15J-OC-Efu"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRZ-6C-jMt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -374,6 +381,7 @@ Jacob Hartvigsen</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About Geek Mind Fusion" id="t38-F8-jw0"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMt-he-gFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -421,9 +429,9 @@ Jacob Hartvigsen</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waH-5H-5be">
-                                <rect key="frame" x="20" y="72" width="80" height="30"/>
+                                <rect key="frame" x="20" y="72" width="90" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="eAO-jl-1jB"/>
+                                    <constraint firstAttribute="width" constant="90" id="eAO-jl-1jB"/>
                                 </constraints>
                                 <state key="normal" title="Learn More"/>
                                 <connections>
@@ -449,6 +457,7 @@ Jacob Hartvigsen</string>
                             <constraint firstItem="VrX-aB-Ut3" firstAttribute="top" secondItem="2H2-eX-Hpc" secondAttribute="bottom" constant="8" symbolic="YES" id="zXw-71-2bY"/>
                         </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="2H2-eX-Hpc" id="rtp-Ta-Yvf"/>
                         <outlet property="textView" destination="VrX-aB-Ut3" id="ggT-Gc-6rT"/>
