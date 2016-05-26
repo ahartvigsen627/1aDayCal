@@ -45,7 +45,6 @@
                 <constraint firstItem="PXc-GH-18B" firstAttribute="top" secondItem="kId-c2-rCX" secondAttribute="bottom" constant="8" id="mV6-7Y-DbU"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
-            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>
         </view>

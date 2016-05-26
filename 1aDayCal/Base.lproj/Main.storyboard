@@ -72,7 +72,6 @@
                     <navigationItem key="navigationItem" title="You May Possibly Be a Geek When..." id="6dS-SP-wMP">
                         <barButtonItem key="backBarButtonItem" title="Back" id="qGy-Ka-bCq"/>
                     </navigationItem>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,7 +147,6 @@
                             <constraint firstItem="Bla-4P-U0x" firstAttribute="trailing" secondItem="xzs-nH-1by" secondAttribute="trailing" id="sSa-Lh-Ygd"/>
                         </constraints>
                     </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="xzs-nH-1by" id="Dgt-fB-JQd"/>
                         <outlet property="textView" destination="zwB-nk-XRR" id="lna-6j-JwV"/>
@@ -231,7 +229,6 @@
                     <navigationItem key="navigationItem" title="Previous Days" id="dQ5-dF-UMw">
                         <barButtonItem key="backBarButtonItem" title="Back" id="055-nT-OBy"/>
                     </navigationItem>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="q51-o1-80u" id="6Y4-7e-aPh"/>
                         <segue destination="fHi-ab-QOC" kind="show" identifier="showImage" id="5Fb-de-lVX"/>
@@ -298,7 +295,6 @@
                     <navigationItem key="navigationItem" title="Settings" id="7n5-os-2dw">
                         <barButtonItem key="backBarButtonItem" title="Back" id="cTi-b5-vV0"/>
                     </navigationItem>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QjV-tF-AKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -350,7 +346,6 @@ Jacob Hartvigsen</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Credits" id="15J-OC-Efu"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRZ-6C-jMt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -381,7 +376,6 @@ Jacob Hartvigsen</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About Geek Mind Fusion" id="t38-F8-jw0"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMt-he-gFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -457,7 +451,6 @@ Jacob Hartvigsen</string>
                             <constraint firstItem="VrX-aB-Ut3" firstAttribute="top" secondItem="2H2-eX-Hpc" secondAttribute="bottom" constant="8" symbolic="YES" id="zXw-71-2bY"/>
                         </constraints>
                     </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="2H2-eX-Hpc" id="rtp-Ta-Yvf"/>
                         <outlet property="textView" destination="VrX-aB-Ut3" id="ggT-Gc-6rT"/>
